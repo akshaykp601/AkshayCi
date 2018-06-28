@@ -21,7 +21,7 @@ function init () {
     }
     /* 0-timeout to get the already changed text */
     function delayedResize () {
-        window.setTimeout(resize, 0);
+        window.setTimeout(resize, 0);      
     }
     observe(text, 'change',  resize);
     observe(text, 'cut',     delayedResize);
